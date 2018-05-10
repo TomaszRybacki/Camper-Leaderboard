@@ -6,10 +6,11 @@ function Table(props) {
     <table className="table">
       <thead className="table__header">
         <tr className="table__row">
-          <th className="table__heading">Position</th>
+          <th className="table__heading">#</th>
+          <th className="table__heading hide">Avatar</th>
           <th className="table__heading">Username</th>
-          <th className="table__heading">Recent Points</th>
-          <th className="table__heading">All Time Points</th>
+          <th className="table__heading">Recent</th>
+          <th className="table__heading">All</th>
         </tr>
       </thead>
 
@@ -18,14 +19,8 @@ function Table(props) {
         (
           <tr className="table__row" key={data.username}>
             <td className="table__data">{index + 1}</td>
-            <td className="table__data">
-              <span className="table__img--align">
-                <img className="table__img" src={data.img} alt="user avatar" />
-              </span>
-              <span className="table__username--align">
-                {data.username}
-              </span>
-            </td>
+            <td className="table__data hide"><img className="table__img" src={data.img} alt="user avatar" /></td>
+            <td className="table__data">{data.username}</td>
             <td className="table__data">{data.recent}</td>
             <td className="table__data">{data.alltime}</td>
           </tr>

@@ -5,7 +5,7 @@ It include their past 30 days score and their total point score.
 
 ## Live preview
 
-[coming soon]()
+[Link to github.io preview page](https://tomaszrybacki.github.io/Camper-Leaderboard/)
 
 ## Free Code Camp challenge
 
